@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6470EB8C-66AD-357F-9E4B-32B8C90F0DDA}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -SC:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general -BC:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/msvc64 --check-stamp-file C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/msvc64/project_module_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\FindFreeImage.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findassimp.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findfreetype.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findglm.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findlibsndfile.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findmoodycamel.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findmpg123.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findportaudio.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findvulkansdk.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\dist_shared_crossplatform.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\nap_module.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\targetarch.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\module_extra.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napcolor\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napcolor\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napcolor\module_extra.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napfont\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napfont\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napfont\module_extra.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napinput\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napinput\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\module_extra.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\module_extra.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\module_extra.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\module_extra.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\msvc64\arch.c;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\share\cmake-3.18\Modules\FindPackageMessage.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\msvc64\project_module_build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -SC:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general -BC:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/msvc64 --check-stamp-file C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/msvc64/project_module_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\FindFreeImage.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findassimp.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findfreetype.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findglm.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findlibsndfile.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findmoodycamel.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findmpg123.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findportaudio.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findvulkansdk.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\dist_shared_crossplatform.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\nap_module.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\targetarch.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\module_extra.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napcolor\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napcolor\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napcolor\module_extra.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napfont\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napfont\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napfont\module_extra.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napinput\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napinput\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\module_extra.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\module_extra.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\module_extra.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\module_extra.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\msvc64\arch.c;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\share\cmake-3.18\Modules\FindPackageMessage.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\msvc64\project_module_build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\msvc64\ZERO_CHECK.vcxproj">
+      <Project>{CBEB2FC7-88FF-302D-BDA1-FAEA16A85536}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\msvc64\project_module_build\mod_general.vcxproj">
+      <Project>{46987093-863A-36B2-9F6A-ABF93780549F}</Project>
+      <Name>mod_general</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

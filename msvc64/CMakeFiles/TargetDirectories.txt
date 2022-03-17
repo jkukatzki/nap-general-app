@@ -1,0 +1,7 @@
+C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/msvc64/CMakeFiles/general.dir
+C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/msvc64/CMakeFiles/INSTALL.dir
+C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/msvc64/CMakeFiles/ALL_BUILD.dir
+C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/msvc64/CMakeFiles/ZERO_CHECK.dir
+C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/msvc64/project_module_build/CMakeFiles/mod_general.dir
+C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/msvc64/project_module_build/CMakeFiles/INSTALL.dir
+C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/msvc64/project_module_build/CMakeFiles/ALL_BUILD.dir

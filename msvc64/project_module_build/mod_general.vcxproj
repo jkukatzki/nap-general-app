@@ -1,0 +1,728 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{46987093-863A-36B2-9F6A-ABF93780549F}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>mod_general</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mod_general.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mod_general</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mod_general.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mod_general</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\src;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\pybind11\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\python\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\portaudio\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\rapidjson\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\moodycamel;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_naprender\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\vulkansdk\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\FreeImage\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napscene\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napparameter\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napaudio\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napfont\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\freetype\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napinput\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napcolor\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napmath\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\rttr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4305;4996;4267;4018;4251</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NAP_SHARED_LIBRARY;MODULE_NAME=mod_general;RTTR_DLL;NOMINMAX;CMAKE_INTDIR="Debug";mod_general_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;NAP_SHARED_LIBRARY;MODULE_NAME=mod_general;RTTR_DLL;NOMINMAX;CMAKE_INTDIR=\"Debug\";mod_general_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\src;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\pybind11\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\python\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\portaudio\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\rapidjson\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\moodycamel;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_naprender\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\vulkansdk\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\FreeImage\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napscene\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napparameter\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napaudio\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napfont\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\freetype\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napinput\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napcolor\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napmath\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\rttr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\src;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\pybind11\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\python\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\portaudio\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\rapidjson\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\moodycamel;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_naprender\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\vulkansdk\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\FreeImage\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napscene\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napparameter\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napaudio\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napfont\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\freetype\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napinput\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napcolor\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napmath\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\rttr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying module.json for mod_general to mod_general.json in library output post-build															</Message>
+      <Command>setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/module.json C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Debug//mod_general.json
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/thirdparty/assimp/bin/assimp-vc140-mt.dll C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Debug/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/thirdparty/FreeImage/bin/FreeImage.dll C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Debug/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_naprender/lib/Debug/mod_naprender.dll C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Debug/
+if %errorlevel% neq 0 goto :cmEnd
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_naprender/lib/Debug/mod_naprender.json C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Debug/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_napscene/lib/Debug/mod_napscene.dll C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Debug/
+if %errorlevel% neq 0 goto :cmEnd
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_napscene/lib/Debug/mod_napscene.json C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Debug/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_napparameter/lib/Debug/mod_napparameter.dll C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Debug/
+if %errorlevel% neq 0 goto :cmEnd
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_napparameter/lib/Debug/mod_napparameter.json C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Debug/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/thirdparty/mpg123/bin/libmpg123.dll C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Debug/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/thirdparty/libsndfile/bin/libsndfile-1.dll C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Debug/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/thirdparty/portaudio/bin/portaudio_x64.dll C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Debug/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_napaudio/lib/Debug/mod_napaudio.dll C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Debug/
+if %errorlevel% neq 0 goto :cmEnd
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_napaudio/lib/Debug/mod_napaudio.json C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Debug/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/thirdparty/freetype/bin/debug/freetyped.dll C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Debug/freetyped.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_napfont/lib/Debug/mod_napfont.dll C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Debug/
+if %errorlevel% neq 0 goto :cmEnd
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_napfont/lib/Debug/mod_napfont.json C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Debug/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_napinput/lib/Debug/mod_napinput.dll C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Debug/
+if %errorlevel% neq 0 goto :cmEnd
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_napinput/lib/Debug/mod_napinput.json C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Debug/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_napcolor/lib/Debug/mod_napcolor.dll C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Debug/
+if %errorlevel% neq 0 goto :cmEnd
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_napcolor/lib/Debug/mod_napcolor.json C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Debug/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_napmath/lib/Debug/mod_napmath.dll C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Debug/
+if %errorlevel% neq 0 goto :cmEnd
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_napmath/lib/Debug/mod_napmath.json C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Debug/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/module.json C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Debug/mod_general.json
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\rttr\lib\rttr_core_d.lib;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\python\libs\python36.lib;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\SDL2\lib\SDL2main.lib;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\SDL2\lib\SDL2.lib;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\lib\Debug\napcore.lib;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\lib\Debug\naprtti.lib;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\lib\Debug\naputility.lib;..\..\module\..\..\..\modules\mod_naprender\lib\Debug\mod_naprender.lib;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\vulkansdk\lib\vulkan-1.lib;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\vulkansdk\lib\vulkan-1.lib;..\..\module\..\..\..\modules\mod_napscene\lib\Debug\mod_napscene.lib;..\..\module\..\..\..\modules\mod_napparameter\lib\Debug\mod_napparameter.lib;..\..\module\..\..\..\modules\mod_napaudio\lib\Debug\mod_napaudio.lib;..\..\module\..\..\..\modules\mod_napfont\lib\Debug\mod_napfont.lib;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\freetype\bin\debug\freetyped.lib;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\freetype\bin\debug\freetyped.lib;..\..\module\..\..\..\modules\mod_napinput\lib\Debug\mod_napinput.lib;..\..\module\..\..\..\modules\mod_napcolor\lib\Debug\mod_napcolor.lib;..\..\module\..\..\..\modules\mod_napmath\lib\Debug\mod_napmath.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/msvc64/project_module_build/Debug/mod_general.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Debug/mod_general.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\src;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\pybind11\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\python\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\portaudio\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\rapidjson\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\moodycamel;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_naprender\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\vulkansdk\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\FreeImage\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napscene\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napparameter\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napaudio\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napfont\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\freetype\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napinput\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napcolor\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napmath\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\rttr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4305;4996;4267;4018;4251</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NAP_SHARED_LIBRARY;MODULE_NAME=mod_general;RTTR_DLL;NOMINMAX;CMAKE_INTDIR="Release";mod_general_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NAP_SHARED_LIBRARY;MODULE_NAME=mod_general;RTTR_DLL;NOMINMAX;CMAKE_INTDIR=\"Release\";mod_general_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\src;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\pybind11\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\python\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\portaudio\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\rapidjson\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\moodycamel;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_naprender\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\vulkansdk\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\FreeImage\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napscene\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napparameter\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napaudio\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napfont\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\freetype\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napinput\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napcolor\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napmath\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\rttr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\src;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\pybind11\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\python\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\portaudio\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\rapidjson\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\moodycamel;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_naprender\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\vulkansdk\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\FreeImage\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napscene\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napparameter\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napaudio\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napfont\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\freetype\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napinput\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napcolor\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\..\..\..\modules\mod_napmath\include;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\rttr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying module.json for mod_general to mod_general.json in library output post-build															</Message>
+      <Command>setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/module.json C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Release//mod_general.json
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/thirdparty/assimp/bin/assimp-vc140-mt.dll C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Release/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/thirdparty/FreeImage/bin/FreeImage.dll C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Release/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_naprender/lib/Release/mod_naprender.dll C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Release/
+if %errorlevel% neq 0 goto :cmEnd
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_naprender/lib/Release/mod_naprender.json C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Release/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_napscene/lib/Release/mod_napscene.dll C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Release/
+if %errorlevel% neq 0 goto :cmEnd
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_napscene/lib/Release/mod_napscene.json C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Release/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_napparameter/lib/Release/mod_napparameter.dll C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Release/
+if %errorlevel% neq 0 goto :cmEnd
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_napparameter/lib/Release/mod_napparameter.json C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Release/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/thirdparty/mpg123/bin/libmpg123.dll C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Release/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/thirdparty/libsndfile/bin/libsndfile-1.dll C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Release/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/thirdparty/portaudio/bin/portaudio_x64.dll C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Release/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_napaudio/lib/Release/mod_napaudio.dll C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Release/
+if %errorlevel% neq 0 goto :cmEnd
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_napaudio/lib/Release/mod_napaudio.json C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Release/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/thirdparty/freetype/bin/release/freetype.dll C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Release/freetype.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_napfont/lib/Release/mod_napfont.dll C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Release/
+if %errorlevel% neq 0 goto :cmEnd
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_napfont/lib/Release/mod_napfont.json C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Release/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_napinput/lib/Release/mod_napinput.dll C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Release/
+if %errorlevel% neq 0 goto :cmEnd
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_napinput/lib/Release/mod_napinput.json C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Release/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_napcolor/lib/Release/mod_napcolor.dll C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Release/
+if %errorlevel% neq 0 goto :cmEnd
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_napcolor/lib/Release/mod_napcolor.json C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Release/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_napmath/lib/Release/mod_napmath.dll C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Release/
+if %errorlevel% neq 0 goto :cmEnd
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy_if_different C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/../../../modules/mod_napmath/lib/Release/mod_napmath.json C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Release/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -E copy C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/module.json C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Release/mod_general.json
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\rttr\lib\rttr_core.lib;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\python\libs\python36.lib;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\SDL2\lib\SDL2main.lib;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\SDL2\lib\SDL2.lib;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\lib\Release\napcore.lib;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\lib\Release\naprtti.lib;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\lib\Release\naputility.lib;..\..\module\..\..\..\modules\mod_naprender\lib\Release\mod_naprender.lib;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\vulkansdk\lib\vulkan-1.lib;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\vulkansdk\lib\vulkan-1.lib;..\..\module\..\..\..\modules\mod_napscene\lib\Release\mod_napscene.lib;..\..\module\..\..\..\modules\mod_napparameter\lib\Release\mod_napparameter.lib;..\..\module\..\..\..\modules\mod_napaudio\lib\Release\mod_napaudio.lib;..\..\module\..\..\..\modules\mod_napfont\lib\Release\mod_napfont.lib;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\freetype\bin\release\freetype.lib;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\freetype\bin\release\freetype.lib;..\..\module\..\..\..\modules\mod_napinput\lib\Release\mod_napinput.lib;..\..\module\..\..\..\modules\mod_napcolor\lib\Release\mod_napcolor.lib;..\..\module\..\..\..\modules\mod_napmath\lib\Release\mod_napmath.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/msvc64/project_module_build/Release/mod_general.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/lib/Release/mod_general.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -SC:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general -BC:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/msvc64 --check-stamp-file C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/msvc64/project_module_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\FindFreeImage.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findassimp.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findfreetype.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findglm.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findlibsndfile.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findmoodycamel.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findmpg123.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findportaudio.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findvulkansdk.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\dist_shared_crossplatform.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\nap_module.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\targetarch.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\module_extra.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napcolor\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napcolor\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napcolor\module_extra.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napfont\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napfont\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napfont\module_extra.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napinput\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napinput\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\module_extra.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\module_extra.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\module_extra.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\module_extra.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\msvc64\arch.c;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\share\cmake-3.18\Modules\FindPackageMessage.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\msvc64\project_module_build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/module/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\bin\cmake.exe -SC:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general -BC:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/msvc64 --check-stamp-file C:/NAP-0.4.5-Win64/NAP-0.4.5-Win64/projects/general/msvc64/project_module_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\FindFreeImage.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findassimp.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findfreetype.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findglm.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findlibsndfile.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findmoodycamel.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findmpg123.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findportaudio.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\Findvulkansdk.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\dist_shared_crossplatform.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\nap_module.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\cmake\targetarch.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\module_extra.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napcolor\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napcolor\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napcolor\module_extra.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napfont\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napfont\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napfont\module_extra.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napinput\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napinput\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\module_extra.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\module_extra.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\module_extra.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\module_extra.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\cached_module_json.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\module.json;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\msvc64\arch.c;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\thirdparty\cmake\share\cmake-3.18\Modules\FindPackageMessage.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\msvc64\project_module_build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\src\generalservice.cpp" />
+    <ClCompile Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\src\mod_general.cpp" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\src\generalservice.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\assert.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\core.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\coreextension.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\corefactory.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\datetime.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\device.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\directorywatcher.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\event.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\logger.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\module.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\modulemanager.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\numeric.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\objectgraph.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\projectinfo.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\python.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\resource.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\resourcemanager.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\resourceptr.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\rttiobjectgraphitem.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\service.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\serviceobjectgraphitem.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\signalslot.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\timer.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\version.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\binaryreader.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\binarywriter.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\defaultlinkresolver.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\deserializeresult.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\epropertyvalidationmode.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\factory.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\jsonreader.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\jsonwriter.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\linkresolver.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\object.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\objectptr.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\path.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\pythonmodule.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\rtti.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\rttibinaryversion.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\rtticast.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\rttiutilities.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\typeinfo.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\unresolvedpointer.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\writer.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\utility\autoresetevent.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\utility\direntw32.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\utility\dllexport.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\utility\errorstate.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\utility\fileutils.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\utility\memorystream.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\utility\module.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\utility\stringutils.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\utility\threading.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\utility\uniqueptrmapiterator.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\utility\uniqueptrvectoriterator.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\bitmap.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\bitmapfilebuffer.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\boxmesh.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\cameracomponent.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\constantshader.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\copyimagedata.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\descriptorsetallocator.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\descriptorsetcache.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\fbxconverter.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\fontshader.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\geometryfromfile.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\gnomonmesh.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\gnomonshader.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\gpubuffer.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\gpumesh.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\image.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\imagefromfile.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\indexbuffer.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\irendertarget.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\material.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\materialcommon.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\materialinstance.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\mesh.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\meshfromfile.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\meshutils.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\orthocameracomponent.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\perspcameracomponent.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\pipelinekey.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\planemesh.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\polyline.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\renderable2dtextcomponent.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\renderable3dtextcomponent.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\renderableglyph.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\renderablemesh.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\renderablemeshcomponent.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\renderabletextcomponent.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\rendercomponent.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\renderglobals.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\rendergnomoncomponent.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\renderservice.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\rendertarget.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\rendertexture2d.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\rendertotexturecomponent.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\renderutils.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\renderwindow.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\sampler.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\samplerdeclaration.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\samplerinstance.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\scatterpointsmesh.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\sdlhelpers.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\shader.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\snapshot.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\snapshotrendertarget.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\spheremesh.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\surfacedescriptor.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\texture2d.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\triangleiterator.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\trianglemesh.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\uniform.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\uniformcontainer.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\uniformdeclarations.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\uniforminstance.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\vertexattribute.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\vertexattributedeclaration.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\vertexbuffer.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\visualizenormalsmesh.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\vk_mem_alloc.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\include\component.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\include\componentptr.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\include\componentresourcepath.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\include\depthsorter.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\include\entity.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\include\entitycreationparameters.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\include\entityobjectgraphitem.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\include\entityptr.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\include\instanceproperty.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\include\rotatecomponent.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\include\scene.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\include\sceneservice.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\include\transformcomponent.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\include\parameter.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\include\parameterblendcomponent.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\include\parameterblender.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\include\parameterblendgroup.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\include\parametercolor.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\include\parameterenum.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\include\parameternumeric.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\include\parameterquat.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\include\parameterservice.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\include\parametersimple.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\include\parametervec.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\component\audiocomponentbase.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\component\inputcomponent.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\component\levelmetercomponent.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\component\outputcomponent.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\component\playbackcomponent.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\core\audionode.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\core\audionodemanager.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\core\audiopin.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\core\multichannel.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\core\process.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\node\bufferplayernode.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\node\controlnode.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\node\filternode.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\node\gainnode.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\node\inputnode.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\node\levelmeternode.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\node\mixnode.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\node\multiplynode.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\node\outputnode.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\node\pullnode.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\node\stereopannernode.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\resource\audiobufferresource.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\resource\audiofileresource.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\service\audioservice.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\utility\asyncobserver.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\utility\audiofileutils.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\utility\audiofunctions.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\utility\audiotypes.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\utility\delay.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\utility\dirtyflag.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\utility\linearsmoothedvalue.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\utility\rampedvalue.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\utility\safeptr.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\utility\translator.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napfont\include\font.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napfont\include\fontservice.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napfont\include\fontutils.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napfont\include\glyph.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napinput\include\controller.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napinput\include\inputcomponent.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napinput\include\inputevent.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napinput\include\inputrouter.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napinput\include\inputservice.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napinput\include\keyboard.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napinput\include\mouse.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napinput\include\window.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napinput\include\windowevent.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napcolor\include\color.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\include\box.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\include\easing.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\include\fcurve.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\include\lineutils.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\include\mathutils.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\include\psblendmodes.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\include\rect.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\include\smoothdamp.h" />
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\include\waveform.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\msvc64\ZERO_CHECK.vcxproj">
+      <Project>{CBEB2FC7-88FF-302D-BDA1-FAEA16A85536}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

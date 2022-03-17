@@ -1,0 +1,687 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\src\generalservice.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\src\mod_general.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\src\generalservice.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\assert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\coreextension.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\corefactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\datetime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\directorywatcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\event.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\logger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\module.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\modulemanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\numeric.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\objectgraph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\projectinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\python.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\resourcemanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\resourceptr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\rttiobjectgraphitem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\service.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\serviceobjectgraphitem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\signalslot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\nap\version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\binaryreader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\binarywriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\defaultlinkresolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\deserializeresult.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\epropertyvalidationmode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\factory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\jsonreader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\jsonwriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\linkresolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\objectptr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\path.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\pythonmodule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\rtti.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\rttibinaryversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\rtticast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\rttiutilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\typeinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\unresolvedpointer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\rtti\writer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\utility\autoresetevent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\utility\direntw32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\utility\dllexport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\utility\errorstate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\utility\fileutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\utility\memorystream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\utility\module.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\utility\stringutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\utility\threading.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\utility\uniqueptrmapiterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\include\utility\uniqueptrvectoriterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\bitmap.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\bitmapfilebuffer.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\boxmesh.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\cameracomponent.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\constantshader.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\copyimagedata.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\descriptorsetallocator.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\descriptorsetcache.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\fbxconverter.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\fontshader.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\geometryfromfile.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\gnomonmesh.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\gnomonshader.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\gpubuffer.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\gpumesh.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\image.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\imagefromfile.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\indexbuffer.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\irendertarget.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\material.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\materialcommon.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\materialinstance.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\mesh.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\meshfromfile.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\meshutils.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\orthocameracomponent.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\perspcameracomponent.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\pipelinekey.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\planemesh.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\polyline.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\renderable2dtextcomponent.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\renderable3dtextcomponent.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\renderableglyph.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\renderablemesh.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\renderablemeshcomponent.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\renderabletextcomponent.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\rendercomponent.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\renderglobals.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\rendergnomoncomponent.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\renderservice.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\rendertarget.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\rendertexture2d.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\rendertotexturecomponent.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\renderutils.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\renderwindow.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\sampler.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\samplerdeclaration.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\samplerinstance.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\scatterpointsmesh.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\sdlhelpers.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\shader.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\snapshot.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\snapshotrendertarget.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\spheremesh.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\surfacedescriptor.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\texture2d.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\triangleiterator.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\trianglemesh.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\uniform.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\uniformcontainer.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\uniformdeclarations.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\uniforminstance.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\vertexattribute.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\vertexattributedeclaration.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\vertexbuffer.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\visualizenormalsmesh.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_naprender\include\vk_mem_alloc.h">
+      <Filter>Modules\mod_naprender</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\include\component.h">
+      <Filter>Modules\mod_napscene</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\include\componentptr.h">
+      <Filter>Modules\mod_napscene</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\include\componentresourcepath.h">
+      <Filter>Modules\mod_napscene</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\include\depthsorter.h">
+      <Filter>Modules\mod_napscene</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\include\entity.h">
+      <Filter>Modules\mod_napscene</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\include\entitycreationparameters.h">
+      <Filter>Modules\mod_napscene</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\include\entityobjectgraphitem.h">
+      <Filter>Modules\mod_napscene</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\include\entityptr.h">
+      <Filter>Modules\mod_napscene</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\include\instanceproperty.h">
+      <Filter>Modules\mod_napscene</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\include\rotatecomponent.h">
+      <Filter>Modules\mod_napscene</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\include\scene.h">
+      <Filter>Modules\mod_napscene</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\include\sceneservice.h">
+      <Filter>Modules\mod_napscene</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napscene\include\transformcomponent.h">
+      <Filter>Modules\mod_napscene</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\include\parameter.h">
+      <Filter>Modules\mod_napparameter</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\include\parameterblendcomponent.h">
+      <Filter>Modules\mod_napparameter</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\include\parameterblender.h">
+      <Filter>Modules\mod_napparameter</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\include\parameterblendgroup.h">
+      <Filter>Modules\mod_napparameter</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\include\parametercolor.h">
+      <Filter>Modules\mod_napparameter</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\include\parameterenum.h">
+      <Filter>Modules\mod_napparameter</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\include\parameternumeric.h">
+      <Filter>Modules\mod_napparameter</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\include\parameterquat.h">
+      <Filter>Modules\mod_napparameter</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\include\parameterservice.h">
+      <Filter>Modules\mod_napparameter</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\include\parametersimple.h">
+      <Filter>Modules\mod_napparameter</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napparameter\include\parametervec.h">
+      <Filter>Modules\mod_napparameter</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\component\audiocomponentbase.h">
+      <Filter>Modules\mod_napaudio\audio\component</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\component\inputcomponent.h">
+      <Filter>Modules\mod_napaudio\audio\component</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\component\levelmetercomponent.h">
+      <Filter>Modules\mod_napaudio\audio\component</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\component\outputcomponent.h">
+      <Filter>Modules\mod_napaudio\audio\component</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\component\playbackcomponent.h">
+      <Filter>Modules\mod_napaudio\audio\component</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\core\audionode.h">
+      <Filter>Modules\mod_napaudio\audio\core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\core\audionodemanager.h">
+      <Filter>Modules\mod_napaudio\audio\core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\core\audiopin.h">
+      <Filter>Modules\mod_napaudio\audio\core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\core\multichannel.h">
+      <Filter>Modules\mod_napaudio\audio\core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\core\process.h">
+      <Filter>Modules\mod_napaudio\audio\core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\node\bufferplayernode.h">
+      <Filter>Modules\mod_napaudio\audio\node</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\node\controlnode.h">
+      <Filter>Modules\mod_napaudio\audio\node</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\node\filternode.h">
+      <Filter>Modules\mod_napaudio\audio\node</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\node\gainnode.h">
+      <Filter>Modules\mod_napaudio\audio\node</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\node\inputnode.h">
+      <Filter>Modules\mod_napaudio\audio\node</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\node\levelmeternode.h">
+      <Filter>Modules\mod_napaudio\audio\node</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\node\mixnode.h">
+      <Filter>Modules\mod_napaudio\audio\node</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\node\multiplynode.h">
+      <Filter>Modules\mod_napaudio\audio\node</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\node\outputnode.h">
+      <Filter>Modules\mod_napaudio\audio\node</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\node\pullnode.h">
+      <Filter>Modules\mod_napaudio\audio\node</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\node\stereopannernode.h">
+      <Filter>Modules\mod_napaudio\audio\node</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\resource\audiobufferresource.h">
+      <Filter>Modules\mod_napaudio\audio\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\resource\audiofileresource.h">
+      <Filter>Modules\mod_napaudio\audio\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\service\audioservice.h">
+      <Filter>Modules\mod_napaudio\audio\service</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\utility\asyncobserver.h">
+      <Filter>Modules\mod_napaudio\audio\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\utility\audiofileutils.h">
+      <Filter>Modules\mod_napaudio\audio\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\utility\audiofunctions.h">
+      <Filter>Modules\mod_napaudio\audio\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\utility\audiotypes.h">
+      <Filter>Modules\mod_napaudio\audio\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\utility\delay.h">
+      <Filter>Modules\mod_napaudio\audio\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\utility\dirtyflag.h">
+      <Filter>Modules\mod_napaudio\audio\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\utility\linearsmoothedvalue.h">
+      <Filter>Modules\mod_napaudio\audio\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\utility\rampedvalue.h">
+      <Filter>Modules\mod_napaudio\audio\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\utility\safeptr.h">
+      <Filter>Modules\mod_napaudio\audio\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napaudio\include\audio\utility\translator.h">
+      <Filter>Modules\mod_napaudio\audio\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napfont\include\font.h">
+      <Filter>Modules\mod_napfont</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napfont\include\fontservice.h">
+      <Filter>Modules\mod_napfont</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napfont\include\fontutils.h">
+      <Filter>Modules\mod_napfont</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napfont\include\glyph.h">
+      <Filter>Modules\mod_napfont</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napinput\include\controller.h">
+      <Filter>Modules\mod_napinput</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napinput\include\inputcomponent.h">
+      <Filter>Modules\mod_napinput</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napinput\include\inputevent.h">
+      <Filter>Modules\mod_napinput</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napinput\include\inputrouter.h">
+      <Filter>Modules\mod_napinput</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napinput\include\inputservice.h">
+      <Filter>Modules\mod_napinput</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napinput\include\keyboard.h">
+      <Filter>Modules\mod_napinput</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napinput\include\mouse.h">
+      <Filter>Modules\mod_napinput</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napinput\include\window.h">
+      <Filter>Modules\mod_napinput</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napinput\include\windowevent.h">
+      <Filter>Modules\mod_napinput</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napcolor\include\color.h">
+      <Filter>Modules\mod_napcolor</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\include\box.h">
+      <Filter>Modules\mod_napmath</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\include\easing.h">
+      <Filter>Modules\mod_napmath</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\include\fcurve.h">
+      <Filter>Modules\mod_napmath</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\include\lineutils.h">
+      <Filter>Modules\mod_napmath</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\include\mathutils.h">
+      <Filter>Modules\mod_napmath</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\include\psblendmodes.h">
+      <Filter>Modules\mod_napmath</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\include\rect.h">
+      <Filter>Modules\mod_napmath</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\include\smoothdamp.h">
+      <Filter>Modules\mod_napmath</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\modules\mod_napmath\include\waveform.h">
+      <Filter>Modules\mod_napmath</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\NAP-0.4.5-Win64\NAP-0.4.5-Win64\projects\general\module\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{ADC050A4-42D2-318D-84E9-B0B01B94EEC0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{D946847D-66A4-33BE-9D5F-4C7576EEB15B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules">
+      <UniqueIdentifier>{23E15927-B7D7-33CD-8782-48E7D8B07C99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\mod_napaudio">
+      <UniqueIdentifier>{2983DAB6-8A92-3857-B6BA-A8B3A8CDE5F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\mod_napaudio\audio">
+      <UniqueIdentifier>{176D7558-0A4C-30C5-8957-30346FA54986}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\mod_napaudio\audio\component">
+      <UniqueIdentifier>{51701391-3676-31C1-801A-9FC81016CCBE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\mod_napaudio\audio\core">
+      <UniqueIdentifier>{D7BE207A-F536-3D99-A9A8-9F0358284034}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\mod_napaudio\audio\node">
+      <UniqueIdentifier>{2D14B165-0253-3224-AF42-174ACEE63563}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\mod_napaudio\audio\resource">
+      <UniqueIdentifier>{B2262006-F3B8-3510-8284-9D1DAEE609C2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\mod_napaudio\audio\service">
+      <UniqueIdentifier>{DB22B394-E4FD-3DB0-9041-911F16A36429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\mod_napaudio\audio\utility">
+      <UniqueIdentifier>{30A51CA3-DEF6-3734-B0C0-BAA8C0DE7348}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\mod_napcolor">
+      <UniqueIdentifier>{19EA089B-88CD-3885-AD50-D87FCA75661F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\mod_napfont">
+      <UniqueIdentifier>{C9385C0F-5FB8-3854-BCCC-9080C81C0D5E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\mod_napinput">
+      <UniqueIdentifier>{AA3570B9-956F-3BAA-81F8-C9284FFA55EC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\mod_napmath">
+      <UniqueIdentifier>{392F5141-F0BC-3DAD-90A7-A6EDF4A62A3E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\mod_napparameter">
+      <UniqueIdentifier>{FFCE3AFD-9028-3C48-8E77-6D6D456FDBE1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\mod_naprender">
+      <UniqueIdentifier>{A5FAA02E-CCD5-358E-B572-B2022D39913D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\mod_napscene">
+      <UniqueIdentifier>{737ECBE1-1312-32D8-99F7-6FEF3A7053CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{D8876EA7-4111-3BC7-B2C4-F7FADF5CD64A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
